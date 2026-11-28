@@ -16,4 +16,8 @@ public class Grade {
     public int getMax(){
         return max;
     }
+
+    public boolean isAllowed(int grade){
+        return grade >= min && grade <= max;
+    }
 }
